@@ -1,0 +1,56 @@
+Summary:	embedded version of KDE's konqueror browser
+Summary(pl):	minimalna wersja przegl±darki konquerror pochodz±cej z KDE
+Name:		netraider
+Version:	0.0.2
+Release:	1
+License:	GPL
+Group:		X11/Applications/Networking
+Group(de):	X11/Applikationen/Netzwerkwesen
+Group(pl):	X11/Aplikacje/Sieciowe
+Source0:	http://mandragon.org/raider/netraider-source-0.0.2.tar.gz
+URL:		http://mandragon.org/raider/
+BuildRequires:	libstdc++-devel
+BuildRequires:	openssl-devel
+BuildRequires:	XFree86-devel
+BuildRequires:	libpng-devel
+BuildRequires:	libjpeg-devel
+BuildRequires:	zlib-devel
+BuildRequires:	qt-devel >= 2.2.0
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
+%description
+Small desktop independent web browser witch features such as:
+cookie management, bookmarks, javascript support, proxy support, SSL support.
+
+%description -l pl
+Niewielka, niezale¿na od zarz±dcy okien przegl±darka www z takimi
+mo¿liwo¶ciami jak: zarz±dzanie ciasteczkami, ksi±¿ki adresowe, wsparcie
+dla javascript, proxy oraz SSL.
+
+%prep
+%setup -q -n %{name}-source-%{version}
+
+%build
+%configure
+%{__make}
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+gzip -9nf AUTHORS ChangeLog README TODO
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc *.gz
+%attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/Network/WWW/*
+%{_datadir}/galeon
+%{_datadir}/pixmaps/*
