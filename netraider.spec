@@ -39,9 +39,10 @@ wsparcie dla javascript, proxy oraz SSL.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+
 mv -f $RPM_BUILD_ROOT%{_prefix}/konq	$RPM_BUILD_ROOT%{_bindir}/%{name}
 
 gzip -9nf AUTHORS ChangeLog README TODO
