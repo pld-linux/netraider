@@ -2,7 +2,7 @@ Summary:	embedded version of KDE's konqueror browser
 Summary(pl):	minimalna wersja przegl±darki konquerror pochodz±cej z KDE
 Name:		netraider
 Version:	0.0.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -33,7 +33,7 @@ wsparcie dla javascript, proxy oraz SSL.
 %setup -q -n %{name}-source-%{version}
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
