@@ -6,6 +6,7 @@ Release:	5
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://mandragon.org/raider/%{name}-source-%{version}.tar.gz
+# Source0-md5:	301b43a32acf49bd8295cbc54b4dd1e7
 URL:		http://mandragon.org/raider/
 BuildRequires:	libpng-devel
 BuildRequires:	libjpeg-devel
