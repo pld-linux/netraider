@@ -2,18 +2,17 @@ Summary:	embedded version of KDE's konqueror browser
 Summary(pl):	minimalna wersja przegl±darki konquerror pochodz±cej z KDE
 Name:		netraider
 Version:	0.0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://mandragon.org/raider/%{name}-source-%{version}.tar.gz
 URL:		http://mandragon.org/raider/
-BuildRequires:	libstdc++-devel
-BuildRequires:	openssl-devel
-BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libjpeg-devel
+BuildRequires:	libstdc++-devel
+BuildRequires:	openssl-devel >= 0.9.6a
 BuildRequires:	zlib-devel
 BuildRequires:	qt-devel >= 2.2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
