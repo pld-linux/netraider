@@ -5,8 +5,6 @@ Version:	0.0.2
 Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://mandragon.org/raider/%{name}-source-%{version}.tar.gz
 URL:		http://mandragon.org/raider/
 BuildRequires:	libpng-devel
