@@ -21,7 +21,7 @@ Small desktop independent web browser witch features such as: cookie
 management, bookmarks, javascript support, proxy support, SSL support.
 
 %description -l pl
-Niewielka, niezale¿na od zarz±dcy okien przegl±darka www z takimi
+Niewielka, niezale¿na od zarz±dcy okien przegl±darka WWW z takimi
 mo¿liwo¶ciami jak: zarz±dzanie ciasteczkami, ksi±¿ki adresowe,
 wsparcie dla javascript, proxy oraz SSL.
 
