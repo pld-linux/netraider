@@ -1,5 +1,5 @@
 Summary:	Embedded version of KDE's konqueror browser
-Summary(pl):	Minimalna wersja przegl±darki konquerror pochodz±cej z KDE
+Summary(pl.UTF-8):   Minimalna wersja przeglÄ…darki konquerror pochodzÄ…cej z KDE
 Name:		netraider
 Version:	0.0.2
 Release:	5
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Small desktop independent web browser witch features such as: cookie
 management, bookmarks, javascript support, proxy support, SSL support.
 
-%description -l pl
-Niewielka, niezale¿na od zarz±dcy okien przegl±darka WWW z takimi
-mo¿liwo¶ciami jak: zarz±dzanie ciasteczkami, ksi±¿ki adresowe,
+%description -l pl.UTF-8
+Niewielka, niezaleÅ¼na od zarzÄ…dcy okien przeglÄ…darka WWW z takimi
+moÅ¼liwoÅ›ciami jak: zarzÄ…dzanie ciasteczkami, ksiÄ…Å¼ki adresowe,
 wsparcie dla javascript, proxy oraz SSL.
 
 %prep
