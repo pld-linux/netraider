@@ -1,5 +1,5 @@
 Summary:	Embedded version of KDE's konqueror browser
-Summary(pl.UTF-8):   Minimalna wersja przeglądarki konquerror pochodzącej z KDE
+Summary(pl.UTF-8):	Minimalna wersja przeglądarki konquerror pochodzącej z KDE
 Name:		netraider
 Version:	0.0.2
 Release:	5
